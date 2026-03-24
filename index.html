@@ -369,12 +369,12 @@ body{font-family:'EB Garamond',Georgia,serif;background:var(--ivory);color:var(-
 .notes-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 100%,rgba(22,38,62,0.18) 0%,transparent 60%);pointer-events:none}
 .notes-section .s-label{color:rgba(184,204,224,0.45)}
 .notes-section .s-title{color:#E8EFF5}
-.notes-grid{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(150,167,182,0.1);border:1px solid rgba(150,167,182,0.1);position:relative;z-index:1}
+.notes-grid{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(150,167,182,0.08);border:none;position:relative;z-index:1;padding:2px}.notes-grid::before{content:"";position:absolute;inset:0;padding:2px;background:linear-gradient(135deg,#BF953F,#FCF6BA,#B38728,#FBF5B7,#AA771C,#FCF6BA,#BF953F);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:2}
 @media(min-width:560px){.notes-grid{grid-template-columns:1fr 1fr}}
-.note-item{padding:1.5rem 1.7rem;background:rgba(61,88,112,0.42);text-align:left;border-left:2px solid transparent;transition:background 0.3s ease,border-left-color 0.3s ease}
-.note-item:hover{background:rgba(61,88,112,0.68);border-left-color:rgba(150,167,182,0.38)}
-.note-title{font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--mist);opacity:0.8;margin-bottom:0.42rem}
-.note-body{font-family:'EB Garamond',serif;font-size:0.96rem;line-height:1.7;color:rgba(203,200,196,0.7)}
+.note-item{padding:1.5rem 1.7rem;background:rgba(30,50,80,0.5);text-align:left;border-left:2px solid rgba(191,149,63,0.15);transition:background 0.3s ease,border-left-color 0.3s ease}
+.note-item:hover{background:rgba(61,88,112,0.68);border-left-color:rgba(191,149,63,0.55)}
+.note-title{font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;background:linear-gradient(135deg,#BF953F,#FCF6BA,#B38728);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:goldShimmer 4s linear infinite;margin-bottom:0.42rem}
+.note-body{font-family:'EB Garamond',serif;font-size:0.96rem;line-height:1.7;color:rgba(232,228,222,0.88)}
 
 /* ════════════════════════════════
    RSVP
